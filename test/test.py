@@ -16,7 +16,6 @@ def loginWithUserNameAndPwd(email,password):
 
 def loginWithGsfIdAndToken(gsfId,authSubToken):
     print('\nNow trying secondary login with ac2dm token and gsfId saved\n')
-    server = GooglePlayAPI('it_IT', 'Europe/Rome')
     server.login(None, None, gsfId, authSubToken)
 
 # SEARCH
@@ -123,4 +122,5 @@ def list():
         print(app['docId'])
 
 if __name__=="__main__":
-    loginWithUserNameAndPwd('martin15638277777@gmail.com','martin@gmail')
+    #loginWithUserNameAndPwd('martin15638277777@gmail.com','martin@gmail')
+    search()
