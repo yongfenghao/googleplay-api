@@ -1,6 +1,9 @@
+import sys
+sys.path.append('../')
+
 from gpapi.googleplay import GooglePlayAPI, RequestError
 
-import sys
+
 import argparse
 
 ap = argparse.ArgumentParser(description='Test download of expansion files')
